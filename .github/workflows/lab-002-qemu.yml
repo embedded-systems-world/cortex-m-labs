@@ -1,0 +1,22 @@
+name: Test Lab 002 Cortex-M Tail-Chaining in QEMU
+on:
+  push:
+    branches: [main]
+    paths:
+      - "labs/002-tail-chaining-exception-return/**"
+      - ".github/workflows/lab-002-qemu.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qemu-cortex-m3-lab-002:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install compiler and QEMU
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq gcc-arm-none-eabi qemu-system-arm
+      - name: Build and test both scenarios
+        run: make -C labs/002-tail-chaining-exception-return test
