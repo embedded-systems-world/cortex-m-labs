@@ -2,7 +2,7 @@
 
 **Embedded Systems World · Why Series companion lab · Learn → Experiment → Understand**
 
-> **Validation in progress:** This lab is a draft until its QEMU CI job passes. Do not cite it as measured proof of tail-chaining cycles.
+> **Validation:** Both experiments passed automated Cortex-M3 QEMU tests. This validates the recorded execution order and exception-state checks, **not** cycle-accurate tail-chaining savings.
 
 ## Learning goal
 
