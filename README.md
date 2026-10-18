@@ -7,7 +7,7 @@ Free, reproducible bare-metal ARM Cortex-M examples for the Embedded Systems Wor
 | Lab | Topic | Goal |
 | --- | --- | --- |
 | [Lab 001](labs/001-nvic-nested-interrupts/) | NVIC priority and preemption | Verify when an interrupt preempts or waits |
-| Lab 002 (in preparation) | Tail-chaining and exception return | Inspect the hardware exception frame and EXC_RETURN |
+| [Lab 002](labs/002-tail-chaining-exception-return/) (validation pending) | Tail-chaining and exception return | Inspect the hardware exception frame and EXC_RETURN |
 
 **Tools:** Linux or WSL, GNU Arm Embedded toolchain, QEMU `qemu-system-arm`, Python 3.
 
